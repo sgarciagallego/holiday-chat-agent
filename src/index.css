@@ -86,16 +86,20 @@ select {
 
 /* chatbot */
 
-.rsc-float-button {
-  background: #000;
+.rsc-container {
+  background-color: #E0E0E0 !important;
+  border-radius: 0 !important;
 }
 
-.rsc-float-button svg {
-  fill: #FFF;
+.rsc-header {
+  -webkit-box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2.98px 7.46px 0px rgba(0, 0, 0, 0.1);
 }
 
 .rsc-content {
-  padding-left: 8px;
+  margin-top: 0 !important;
+  padding: 0 8px;
 }
 
 .rsc-ts-image-container {
@@ -104,4 +108,17 @@ select {
 
 .rsc-ts-bubble {
   margin: 0 0 2px 0 !important;
+}
+
+.rsc-cs {
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 20px 0 !important;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  
 }

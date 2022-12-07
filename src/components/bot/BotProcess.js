@@ -1,11 +1,19 @@
 import React from 'react'
 import Chatbot from 'react-simple-chatbot'
 import { ThemeProvider } from 'styled-components'
+import ColdSea from './output/ColdSea'
+import ColdCity from './output/ColdCity'
+import ColdMountain from './output/ColdMountain'
+import MildSea from './output/MildSea'
+import MildCity from './output/MildCity'
+import MildMountain from './output/MildMountain'
+import HotSea from './output/HotSea'
+import HotCity from './output/HotCity'
+import HotMountain from './output/HotMountain'
 
 const config = {
-  width: "400px",
-  height: "500px",
-  floating: true,
+  width: "100vw",
+  height: "100vh",
 }
 
 const uniform = {
@@ -107,83 +115,119 @@ const BotProcess = () => {
             ]
           },
           {
+            // cold and sea
             id: 13,
-            component: (
-              <div>
-                <p>You have chosen a cold environment by the sea.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a cold environment by the sea.",
+            trigger: 22,
           },
           {
+            // cold and city
             id: 14,
-            component: (
-              <div>
-                <p>You have chosen a cold environment in the city.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a cold environment in the city.",
+            trigger: 23,
           },
           {
+            // cold and mountain
             id: 15,
-            component: (
-              <div>
-                <p>You have chosen a cold environment on a mountain.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a cold environment on a mountain.",
+            trigger: 24,
           },
           {
+            // mild and sea
             id: 16,
-            component: (
-              <div>
-                <p>You have chosen a mild environment by the sea.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a mild environment by the sea.",
+            trigger: 25,
           },
           {
+            // mild and city
             id: 17,
-            component: (
-              <div>
-                <p>You have chosen a mild environment in the city.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a mild environment in the city.",
+            trigger: 26,
           },
           {
+            // mild and mountain
             id: 18,
-            component: (
-              <div>
-                <p>You have chosen a mild environment on a mountain.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a mild environment on a mountain.",
+            trigger: 27,
           },
           {
+            // hot and sea
             id: 19,
-            component: (
-              <div>
-                <p>You have chosen a hot environment by the sea.</p>
-              </div>
-            ),
-            end: true,
+            message: "Here are all available hotels based on your preferences of a hot environment by the sea.",
+            trigger: 28,
           },
           {
+            // hot and city
             id: 20,
+            message: "Here are all available hotels based on your preferences of a hot environment in the city.",
+            trigger: 29,
+          },
+          {
+            // hot and mountain
+            id: 21,
+            message: "Here are all available hotels based on your preferences of a hot environment on a mountain.",
+            trigger: 30,
+          },
+          {
+            id: 22,
             component: (
-              <div>
-                <p>You have chosen a hot environment in the city.</p>
-              </div>
+              <ColdSea />
             ),
             end: true,
           },
           {
-            id: 21,
+            id: 23,
             component: (
-              <div>
-                <p>You have chosen a hot environment on a mountain.</p>
-              </div>
+              <ColdCity />
+            ),
+            end: true,
+          },
+          {
+            id: 24,
+            component: (
+              <ColdMountain />
+            ),
+            end: true,
+          },
+          {
+            id: 25,
+            component: (
+              <MildSea />
+            ),
+            end: true,
+          },
+          {
+            id: 26,
+            component: (
+              <MildCity />
+            ),
+            end: true,
+          },
+          {
+            id: 27,
+            component: (
+              <MildMountain />
+            ),
+            end: true,
+          },
+          {
+            id: 28,
+            component: (
+              <HotSea />
+            ),
+            end: true,
+          },
+          {
+            id: 29,
+            component: (
+              <HotCity />
+            ),
+            end: true,
+          },
+          {
+            id: 30,
+            component: (
+              <HotMountain />
             ),
             end: true,
           },
