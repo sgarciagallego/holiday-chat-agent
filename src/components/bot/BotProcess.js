@@ -166,6 +166,7 @@ const BotProcess = () => {
             component: (
               <>
                 <ColdSea />
+                <ReloadBtn />
               </>
             ),
             end: true,
@@ -173,14 +174,20 @@ const BotProcess = () => {
           {
             id: 23,
             component: (
-              <ColdCity />
+              <>
+                <ColdCity />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
           {
             id: 24,
             component: (
-              <ColdMountain />
+              <>
+                <ColdMountain />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
@@ -197,35 +204,50 @@ const BotProcess = () => {
           {
             id: 26,
             component: (
-              <MildCity />
+              <>
+                <MildCity />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
           {
             id: 27,
             component: (
-              <MildMountain />
+              <>
+                <MildMountain />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
           {
             id: 28,
             component: (
-              <HotSea />
+              <>
+                <HotSea />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
           {
             id: 29,
             component: (
-              <HotCity />
+              <>
+                <HotCity />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
           {
             id: 30,
             component: (
-              <HotMountain />
+              <>
+                <HotMountain />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },
