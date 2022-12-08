@@ -119,3 +119,8 @@ select {
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.rsc-input {
+  border: 0 !important;
+  border-radius: 0 !important;
+}
