@@ -2,6 +2,7 @@ import React from 'react'
 import Chatbot from 'react-simple-chatbot'
 import { ThemeProvider } from 'styled-components'
 import { ColdSea, ColdCity, ColdMountain, MildSea, MildCity, MildMountain, HotSea, HotCity, HotMountain } from './output/Options'
+import ReloadBtn from './ReloadBtn'
 
 const config = {
   width: "100%",
@@ -163,7 +164,9 @@ const BotProcess = () => {
           {
             id: 22,
             component: (
-              <ColdSea />
+              <>
+                <ColdSea />
+              </>
             ),
             end: true,
           },
@@ -184,7 +187,10 @@ const BotProcess = () => {
           {
             id: 25,
             component: (
-              <MildSea />
+              <>
+                <MildSea />
+                <ReloadBtn />
+              </>
             ),
             end: true,
           },

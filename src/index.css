@@ -48,8 +48,6 @@ html:focus-within {
 
 body {
   overflow-x: hidden;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   font-family: "Lexend Deca", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -115,11 +113,9 @@ select {
   background: transparent !important;
   box-shadow: none !important;
   margin: 0 !important;
-  padding: 20px 0 !important;
+  padding: 20px 0 125px 0 !important;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
-  
 }
