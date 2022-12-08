@@ -1,18 +1,10 @@
 import React from 'react'
 import Chatbot from 'react-simple-chatbot'
 import { ThemeProvider } from 'styled-components'
-import ColdSea from './output/ColdSea'
-import ColdCity from './output/ColdCity'
-import ColdMountain from './output/ColdMountain'
-import MildSea from './output/MildSea'
-import MildCity from './output/MildCity'
-import MildMountain from './output/MildMountain'
-import HotSea from './output/HotSea'
-import HotCity from './output/HotCity'
-import HotMountain from './output/HotMountain'
+import { ColdSea, ColdCity, ColdMountain, MildSea, MildCity, MildMountain, HotSea, HotCity, HotMountain } from './output/Options'
 
 const config = {
-  width: "100vw",
+  width: "100%",
   height: "100vh",
 }
 
@@ -28,7 +20,7 @@ const uniform = {
 const BotProcess = () => {
   return (
     <ThemeProvider theme={uniform}>
-      <Chatbot 
+      <Chatbot
         steps={[
           {
             id: 1,

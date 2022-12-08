@@ -48,7 +48,8 @@ html:focus-within {
 
 body {
   overflow-x: hidden;
-  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   font-family: "Lexend Deca", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
